@@ -1,0 +1,21 @@
+{
+  "name": "adminend",
+  "version": "1.0.0",
+  "description": "admin monitorinf of kurecoin hub",
+  "main": "node server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Okunade Stephen",
+  "license": "ISC",
+  "dependencies": {
+    "coinpayments": "^2.0.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.3",
+    "mysql2": "^1.6.5",
+    "pg": "^7.4.3",
+    "pg-hstore": "^2.3.2",
+    "random-int": "^2.0.0",
+    "sequelize": "^4.37.6"
+  }
+}
