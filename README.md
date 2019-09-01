@@ -65,3 +65,4 @@ hotel automate api
 	`npm test`
 
 
+<!-- https://stackoverflow.com/questions/11803496/dump-sql-file-to-cleardb-in-heroku -->
