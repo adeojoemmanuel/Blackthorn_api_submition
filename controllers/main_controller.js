@@ -13,11 +13,10 @@ var Sequelize = require('sequelize');
 exports.register_occupants_to_device = (req,res)=>{
     // register device to occupant
     occupant.create({
-      id: req.body.deviceid,
       deviceId:req.body.deviceid,
       guest_fname:req.body.guest_fname,
       guest_lname:req.body.guest_lname,
-      guest_tag: req.body.guest_tag,
+      guest_tag: req.body.guest_tag
     }).then(result=>{
       res.send({
         status:true,
@@ -37,11 +36,11 @@ exports.list_screen = (req,res)=>{
 
 
 exports.create_screen = (req,res)=>{
-  occupant.create({
+  devices.create({
     deviceId:req.body.deviceid,
     uuid:req.body.uuid,
     room_class:req.body.room_class,
-    room_num: req.body.room_num,
+    room_num: req.body.room_num
   }).then(result=>{
     res.send({
       status:true,
@@ -51,6 +50,7 @@ exports.create_screen = (req,res)=>{
 }
 
 exports.available_channels = (req,res)=>{
+  const tags = req.body.tags
   streams.findAll({
     where:{}
   }).then(result=>{

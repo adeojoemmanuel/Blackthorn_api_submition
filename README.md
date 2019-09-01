@@ -1,10 +1,9 @@
-# Blackthorn-Coding-Challenge
+hotel automate api
+- set up for dev
 
-- set up 
+	1) `git clone https://github.com/adeojoemmanuel/hotelautomate.git`
 
-	1) `git clone https://github.com/adeojoemmanuel/Blackthorn-api-test.git`
-
-	2) `cd Blackthorn-api-test`
+	2) `cd hotelautomate`
 
 	3) `npm install`
 
@@ -12,53 +11,50 @@
 
 	`node server`
 
-# Create Cart Endpoints
+# Create Cart register account to device
 
-## Base URL : 'https://blackthorn-entry-test.herokuapp.com/api/'
+## Base URL : 'https://hotelautomate.herokuapp.com/api/'
 
-- *POST* `/create_cart`
+- *POST* `/register_occupants`
+
 ```js
 {
-    userId : required, 11, int
-    subtotal : required, 11, int
-    discounts : required, 11, int
-    taxes : required, 11, int
-    total : required, 11, int
-    productId : required, 11, int
-    quantity : required, 11, int
-    name : required, 11, character
-    price : required, 11, int
+    deviceid : required, 11, int
+    guest_fname : required, 11, int
+    guest_lname : required, 11, int
+    guest_tag : required, 11, [list []
 }
 ```
 
-# Update Cart Endpoints
+# list all screens
 
-- *POST* `/update_cart`
+- *POST* `/list_screen`
+
 ```js
 {
-    shoppingCartId : required, 11, int
-    productId : required, 11, int
-    quantity : required, 11, int
-    name : required, 11, character
-    price : required, 11, int
+    empty
 }
 ```
 
-# Get Cart By User Id Endpoints
+# create new screen 
 
-- *POST* `/get_cart_user_id`
+- *POST* `/create_screen`
+
 ```js
 {
-    userId : required, 11, int
+    deviceId : required, 11, string
+    uuid : required, 11, string
+    room_class : required, 11, string
+    room_num : required, 11, string
 }
 ```
 
-# Get Cart By Cart Id Endpoints
+# list all available channels based on user tags
 
-- *POST* `/get_cart_id`
+- *POST* `/available_channels`
 ```js
 {
-    shoppingCartId : required, 11, int
+    tags : required, 11, list []
 }
 ```
 
