@@ -13,7 +13,7 @@ app.options('*', cors());
 //   console.log('Drop and Resync with { force: true }');
 // });
  
-require('./routes/shopping_cart.route')(app);
+require('./routes/main.route')(app);
 
  
 // Create a Server

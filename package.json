@@ -1,12 +1,12 @@
 {
-  "name": "adminend",
+  "name": "haa",
   "version": "1.0.0",
-  "description": "admin monitorinf of kurecoin hub",
+  "description": "hotel automation api",
   "main": "node server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Okunade Stephen",
+  "author": "Adeojo Emmanuel",
   "license": "ISC",
   "dependencies": {
     "coinpayments": "^2.0.3",

@@ -20,7 +20,10 @@ db.Sequelize = Sequelize;
 db.sequelize = sequelize;
  
 //Models/tables
-db.shopping_cart = require('../models/shopping_cart')(sequelize,Sequelize)
-db.cart_items = require('../models/cart_items')(sequelize,Sequelize)
+db.admin = require('../models/admin')(sequelize,Sequelize)
+db.devices = require('../models/devices')(sequelize,Sequelize)
+db.occupant = require('../models/occupant')(sequelize,Sequelize)
+db.channels = require('../models/channels')(sequelize,Sequelize)
+db.streams = require('../models/streams')(sequelize,Sequelize)
 
 module.exports = db;
