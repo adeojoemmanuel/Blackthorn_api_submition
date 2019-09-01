@@ -11,7 +11,7 @@ hotel automate api
 
 	`node server`
 
-# Create Cart register account to device
+# register account to device
 
 ## Base URL : 'https://hotelautomate.herokuapp.com/api/'
 
