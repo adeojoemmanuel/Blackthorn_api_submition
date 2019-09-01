@@ -10,6 +10,13 @@ var Sequelize = require('sequelize');
 // Post a Customer
 
 
+exports.rootpage = (req,res)=>{
+  res.send({
+    status:true,
+    message:"Hello World"
+  })
+}
+
 exports.register_occupants_to_device = (req,res)=>{
     // register device to occupant
     occupant.create({
@@ -32,8 +39,6 @@ exports.list_screen = (req,res)=>{
     res.json(result)
   })
 }
-
-
 
 exports.create_screen = (req,res)=>{
   devices.create({

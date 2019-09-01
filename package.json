@@ -4,11 +4,12 @@
   "description": "hotel automation api",
   "main": "node server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "Adeojo Emmanuel",
   "license": "ISC",
   "dependencies": {
+    "chai": "^4.2.0",
     "coinpayments": "^2.0.3",
     "cors": "^2.8.5",
     "express": "^4.16.3",
@@ -17,5 +18,9 @@
     "pg-hstore": "^2.3.2",
     "random-int": "^2.0.0",
     "sequelize": "^4.37.6"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.0",
+    "request": "^2.88.0"
   }
 }
