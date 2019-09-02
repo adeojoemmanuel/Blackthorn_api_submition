@@ -21,7 +21,7 @@ exports.adminlogin = (req,res)=>{
   const body = req.body;
 
   // const user = USERS.find(user => user.username == body.username);
-  if(body.password != "admin" || body.password != 'magnitude') return res.sendStatus(401);
+  if(body.password != "admin" || body.password != 'magnitude') return res.sendStatus({'code':401, 'message':"testing"});
   
   var token = jwt.sign({userID: 1}, 'super-shared-secret', {expiresIn: '2h'});
   res.send({token});
