@@ -18,6 +18,7 @@ exports.rootpage = (req,res)=>{
 }
 
 exports.adminlogin = (req,res)=>{
+  const body = req.body;
   if(body.username != "admin" || body.password != 'magnitude') return res.sendStatus(401);
   var userid = 1;
   var token = jwt.sign({userID: userid}, 'super-shared-secret', {expiresIn: '2h'});
