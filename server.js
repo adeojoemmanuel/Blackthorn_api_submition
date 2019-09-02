@@ -7,7 +7,8 @@ const expressJwt = require('express-jwt');
 app.use(bodyParser.json())
 var cors = require('cors')
 const db = require('./app/db.config');
-  
+const path = require('path');
+app.use(express.static(path.join(__dirname, 'public')))
 app.use(cors());
 
 app.options('*', cors());
@@ -16,6 +17,10 @@ app.options('*', cors());
 //   console.log('Drop and Resync with { force: true }');
 // });
  
+
+app.get("*", (req,res)=>{
+	res.sendFile(path.join(__dirname, 'public/index.html'))
+})
 require('./routes/main.route')(app);
 
  
