@@ -37,7 +37,7 @@ exports.register_occupants_to_device = (req,res)=>{
     }).then(result=>{
       res.send({
         status:true,
-        message:"shopping cart created"
+        message:"user successfully assigned"
       })
     })
 }

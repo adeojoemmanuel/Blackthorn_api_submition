@@ -12,6 +12,8 @@ module.exports = (sequelize,Sequelize)=>{
           guest_tag: {
             type: Sequelize.STRING
           },    
+    },{
+      freezeTableName: true,
     })
     return occupant
 }
