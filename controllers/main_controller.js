@@ -5,6 +5,8 @@ const occupant = db.occupant
 const channels = db.channels
 const streams = db.streams
 var Sequelize = require('sequelize');
+const jwt = require('jsonwebtoken');
+const expressJwt = require('express-jwt');
 
 //const mustache   = require('mustache');
 // Post a Customer
