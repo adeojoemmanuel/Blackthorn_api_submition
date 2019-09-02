@@ -17,11 +17,11 @@ app.options('*', cors());
 //   console.log('Drop and Resync with { force: true }');
 // });
  
+require('./routes/main.route')(app);
 
 app.get("*", (req,res)=>{
 	res.sendFile(path.join(__dirname, 'public/index.html'))
 })
-require('./routes/main.route')(app);
 
  
 // Create a Server
