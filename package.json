@@ -9,10 +9,13 @@
   "author": "Adeojo Emmanuel",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "chai": "^4.2.0",
     "coinpayments": "^2.0.3",
     "cors": "^2.8.5",
     "express": "^4.16.3",
+    "express-jwt": "^5.3.1",
+    "jsonwebtoken": "^8.5.1",
     "mysql2": "^1.6.5",
     "pg": "^7.4.3",
     "pg-hstore": "^2.3.2",

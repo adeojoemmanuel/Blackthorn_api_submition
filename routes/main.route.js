@@ -6,4 +6,5 @@ module.exports = function(app) {
     app.get('/api/list_screen',controller.list_screen);
     app.post('/api/create_screen',controller.create_screen);
     app.post('/api/available_channels',controller.available_channels);
+    app.post('/api/adminlogin',controller.adminlogin);
 }

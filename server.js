@@ -1,8 +1,11 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
+const jwt = require('jsonwebtoken');
+const expressJwt = require('express-jwt');
+
 app.use(bodyParser.json())
- var cors = require('cors')
+var cors = require('cors')
 const db = require('./app/db.config');
   
 app.use(cors());
